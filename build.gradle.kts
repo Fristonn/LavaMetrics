@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.fristonn"
-version = "1.0.0"
+version = providers.gradleProperty("releaseVersion").getOrElse("1.0.0")
 
 repositories {
     mavenCentral()
